@@ -1,18 +1,21 @@
 html lang="pt"
   head
-    title -= Mundanças e Transportes =-
+    title -= Mundanças e Transportes | Transportes Santo António | TSA =-
     meta charset="utf-8"
     meta http-equiv="X-UA-Compatible" content="IE=edge"
     meta name="viewport" content="width=device-width, initial-scale=1"
     meta name="description" content=""
     meta name="author" content=""
     link rel="shortcut icon" href="/favicon.ico"
-
+    script src="//maps.google.com/maps/api/js?sensor=false" type="text/javascript"
+    
     = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
     = render 'layouts/ie_fix'
 
   body class="#{params[:controller]} #{params[:action]}"
-    = yield
-    = render 'layouts/footer_js'
+    .container
+        = render 'layouts/header'
+        = yield
+        = render 'layouts/footer_js'

@@ -4,3 +4,4 @@
 //= require turbolinks
 //= require bootstrap
 //= require bootstrap/docs.min
+//= require gmaps
